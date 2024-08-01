@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.krh1.co.uk/" target="_blank"><img src="/static/krh1_logo.png" width="250"></a>
+        <h1>Simple QR Code Generator</h1>
+        <form action="/generate" method="post">
+            <label for="data">Enter url to generate and download a QR code:</label>
+            <br>
+            <input type="text" id="data" name="data" required>
+            <br>
+            <button type="submit">Generate QR Code image</button>
+            <br>
+            <br>
+            <label for="data">Please note images are not stored online, please save them accordingly.</label>
+            <p><a href="mailto:hello@krh1designs.co.uk">e-Mail me</a></p>
+        </form>
+    </div>
+</body>
+</html>
